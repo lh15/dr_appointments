@@ -1,0 +1,45 @@
+<html ng-app="myApp">
+
+<head>
+	<title>Dr's Appointments</title>
+	<script src="angular/angular.js"></script>
+	<script src="angular-route/angular-route.js"></script>
+	<script src="angular-cookies/angular-cookies.js"></script>
+	<script src="angular-messages/angular-messages.js"></script>
+	<!--<script src="tg-angular-validator/dist/angular-validator.min.js"></script>-->
+	<script src='main.js'></script>
+	<script src='factories/appointmentsFactory.js'></script>
+	<script src='factories/registerFactory.js'></script>
+	<script src='factories/loginFactory.js'></script>
+	<script src='controllers/appointmentsController.js'></script>
+
+	<script src='controllers/registerController.js'></script>
+	<script src='controllers/loginController.js'></script>
+	<!--<link href="./static/css/styles.css" rel="stylesheet">-->
+	<link href="./static/css/form_styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<style>
+
+	</style>
+</head>
+
+
+<body>
+	<div id="container">
+		<div ng-view=''>
+			<!--partials will load here-->
+		</div>
+	</div>
+	<script>
+		console.log('reached script with jquery ui');
+		var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+		if (!isChrome) {
+			alert('please use chrome to register as the date type wont work')
+		}
+	</script>
+</body>
+
+</html>
