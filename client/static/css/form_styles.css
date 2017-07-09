@@ -76,6 +76,12 @@ div[ng-message], .errorMessage {
     margin-top: -10px;
     margin-bottom: 10px;
 }
+.otherMessage {
+    color: lightseagreen;
+    font-size: .8em;
+    margin-top: -10px;
+    margin-bottom: 3px;
+}
 
 #container {
     font-family: 'Gudea', sans-serif;

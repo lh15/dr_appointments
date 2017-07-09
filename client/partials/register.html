@@ -28,8 +28,8 @@
             <div ng-messages="registerForm.pw_confirm.$error" ng-if='registerForm.pw_confirm.$dirty'>
                 <div ng-message="compareTo">Please make sure you're passwords match</div>
             </div>
-            //change for use with other browsers
-            <input id="bday" type="date" placeholder="mm/dd/yyyy" ng-model="user.bday" max="{{currentDate | date:'yyyy-MM-dd'}}" name="bday"  required/>
+            <p class="otherMessage">Please use chrome or mobile for Birthday input</p>
+            <input id="bday" type="date" placeholder="Birthday" ng-model="user.bday" max="{{currentDate | date:'yyyy-MM-dd'}}" name="bday"  required/>
             <div ng-messages="registerForm.bday.$error" ng-if='registerForm.pw_confirm.$dirty'>
                 <div ng-message="required">Please include your birthday</div>
             </div>
