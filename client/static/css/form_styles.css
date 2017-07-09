@@ -127,7 +127,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   margin: 20px auto;
-  width: 100%
+  width: 600%
 }
 
 td, th {
@@ -177,4 +177,10 @@ input {
   table button{
     background: white;
   }
+  table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin: 20px auto;
+  width: 100%
+}
 }
