@@ -4,8 +4,11 @@
     }
 </style>
 <div class="login-page">
+  <h3>Please Register</h3>
     <div class="form">
+      
         <form class="register-form" ng-submit="register()" name="registerForm" novalidate>
+          
             <input type="text" ng-model="user.first_name" placeholder="first name" id="first_name" name="first_name" ng-minlength="2"
             />
             <input type="text" ng-model="user.last_name" placeholder="last name" id="last_name" name="last_name" ng-minlength="2" />
@@ -29,7 +32,7 @@
                 <div ng-message="compareTo">Please make sure you're passwords match</div>
             </div>
             <p class="otherMessage">Please use chrome or mobile for Birthday input</p>
-            <input id="bday" type="date" placeholder="Birthday" ng-model="user.bday" max="{{currentDate | date:'yyyy-MM-dd'}}" name="bday"  required/>
+            <input id="bday" type="date" placeholder="Birthday" ng-model="user.bday" max="{{currentDate | date:'yyyy-MM-dd'}}" name="bday"  required/><span class="bdayPH">birthday</span></input>
             <div ng-messages="registerForm.bday.$error" ng-if='registerForm.pw_confirm.$dirty'>
                 <div ng-message="required">Please include your birthday</div>
             </div>

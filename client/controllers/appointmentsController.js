@@ -1,6 +1,7 @@
 myApp.controller('appointmentsController', ['$scope', 'appointmentsFactory', '$location', '$cookies', '$route', function ($scope, appointmentsFactory, $location, $cookies, $route) {
 
     $scope.newAppointment = {};
+    $scope.search = {};
     $scope.appointments = [];
     $scope.currentDate = new Date(); 
     $scope.validationErrors = null;

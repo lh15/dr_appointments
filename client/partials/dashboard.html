@@ -3,14 +3,14 @@
 <h1>Doctor's Appointments</h1>
 
 <label>
-Search complaints<input type='text' ng-model="search[searchBy]" class="search">
-</label> search by
-<select ng-model="searchBy">
-                    <option value="$">Last Name or complaint</option>
+Search by complaint, last name or time<input type='text' ng-model="search.$" class="search">
+<!--</label> search by-->
+<!--<select ng-model="searchBy">
+                    <option value="$" ng-checked="$">Last Name or complaint</option>
                     <option value="date">date</option>
                     <option value="time">time</option>
                     <option value="complaint">complaint</option>
-                </select>
+                </select>-->
 <table>
     <tr>
         <th>Date</th>
@@ -27,7 +27,7 @@ Search complaints<input type='text' ng-model="search[searchBy]" class="search">
         <td>{{appointment.complaint }}<button ng-if="appointment._user._id === currentUser._id" ng-click="cancelAppointment(appointment._id)">cancel appointment</button></td>
     </tr>
 </table>
- {{currentDate | date: longDate}}
+ <!--{{currentDate | date: longDate}}-->
 <form action="#!/new_appointment">
     <input type="submit" value="Add new Appointment" />
 </form>
